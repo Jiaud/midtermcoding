@@ -3,20 +3,18 @@ package com.cisc181.core;
 import java.util.Date;
 import java.util.UUID;
 
-import com.cisc181.eNums.eMajor;
-
 public class Student extends Person {
 
-	private String Major;
+	private String eMajor;
 	private UUID StudentID;
 	
-	public String getMajor ( )
+	public String geteMajor ( )
     {
-        return this.Major;
+        return this.eMajor;
     }
-    public void setMajor (String Major)
+    public void seteMajor (String Major)
     {
-        this.Major = Major;    
+        this.eMajor = Major;    
     }
     
     public UUID getStudentID(){
@@ -28,7 +26,7 @@ public class Student extends Person {
 	{
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number, Email);
 		this.StudentID = UUID.randomUUID();
-		this.Major = Major;
+		this.eMajor = Major;
 		
 	}
 	
